@@ -1,54 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Under Construction</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            height: 100vh;
-            display: flex;
-            justify-content: center;  /* horizontal center */
-            align-items: center;      /* vertical center */
-            background-color: #0f0f0f;
-        }
-
-        .marquee-container {
-            width: 80%;
-            overflow: hidden;
-            background-color: #111;
-            color: #fff;
-            padding: 15px 0;
-            border-radius: 10px;
-            text-align: center;
-        }
-
-        .marquee-text {
-            display: inline-block;
-            white-space: nowrap;
-            padding-left: 100%;
-            animation: scrollText 13s linear infinite; /* slowed ~30% */
-            font-size: 20px;
-        }
-
-        @keyframes scrollText {
-            0% {
-                transform: translateX(0%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aditya Raj | Portfolio</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background:#0f172a;
+    color:#e2e8f0;
+}
+header{
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#020617;
+}
+header h1{
+    color:#38bdf8;
+}
+nav a{
+    color:#e2e8f0;
+    margin-left:20px;
+    text-decoration:none;
+}
+nav a:hover{
+    color:#38bdf8;
+}
+.section{
+    padding:60px 50px;
+}
+.hero{
+    text-align:center;
+}
+.hero h2{
+    font-size:40px;
+    color:#38bdf8;
+}
+.hero p{
+    margin-top:15px;
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.card{
+    background:#020617;
+    padding:20px;
+    border-radius:12px;
+    margin-top:20px;
+}
+.skills span{
+    display:inline-block;
+    background:#1e293b;
+    padding:8px 12px;
+    margin:5px;
+    border-radius:8px;
+}
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+</style>
 </head>
 <body>
 
-<div class="marquee-container">
-    <div class="marquee-text">
-        🚧 Aditya Raj is currently under construction 🚧
+<header>
+    <h1>Aditya Raj</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="section hero">
+    <h2>Hello, I'm Aditya 👋</h2>
+    <p>Motivated undergraduate student passionate about learning, teamwork, and building impactful experiences.</p>
+</section>
+
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>Motivated and responsible undergraduate student seeking opportunities to contribute, learn, and grow in a dynamic environment. Eager to apply strong communication, organizational, and teamwork skills while gaining practical experience.</p>
     </div>
-</div>
+</section>
+
+<section id="education" class="section">
+    <h2>Education</h2>
+    <div class="card">
+        <p><b>B.Tech CSE (AI/ML)</b> - Bennett University (2024-2028)</p>
+        <p>CGPA: 8.29</p>
+        <br>
+        <p>Don Bosco Academy – Patna (ICSE)</p>
+        <p>S.R. Century Public School – Bahadurgarh (CBSE)</p>
+    </div>
+</section>
+
+<section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="card skills">
+        <span>Communication</span>
+        <span>Teamwork</span>
+        <span>Event Management</span>
+        <span>Time Management</span>
+        <span>MS Office</span>
+    </div>
+</section>
+
+<section id="experience" class="section">
+    <h2>Experience</h2>
+    <div class="card">
+        <p><b>Associate Lead – Operations (DCC)</b></p>
+        <p>Worked in a student club focused on placement preparation.</p>
+        <br>
+        <p><b>Management Team – Sportikon</b></p>
+        <p>Managed multiple sports events over 4 days, coordinating teams and operations.</p>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>📞 +91-8307220354</p>
+        <p>📧 s24cseu1001@bennett.edu.in</p>
+        <p> <a href="https://www.linkedin.com/in/aditya-raj-267971275/">🔗 LinkedIn: Aditya Raj</p></a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Aditya Raj. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
